@@ -12,7 +12,7 @@ function start_running(){
 
 start_running fcitx5
 start_running slstatus
-start_running compton
+start_running picom
 start_running flameshot
 start_running /opt/clash-for-windows-bin/cfw
 start_running $HOME/Applications/picgo_7b2f2e9b0915e6e5470619db5c8ba948.AppImage
