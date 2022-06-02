@@ -10,10 +10,11 @@ function start_running(){
   fi
 }
 
+start_running flameshot
 start_running fcitx5
 start_running slstatus
 start_running picom
-start_running flameshot
-start_running /opt/clash-for-windows-bin/cfw
+start_running /usr/local/clash/cfw
+# start_running /opt/clash-for-windows-bin/cfw
 
 ./wallpaper.sh &
