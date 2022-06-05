@@ -1,6 +1,10 @@
 #!/bin/bash
 
-xrandr --output HDMI-1 --mode 2560x1080 --rate 75 --output eDP-1 --off
+# manjaro open him if you have multiple monitors
+# xrandr --output HDMI-1 --mode 2560x1080 --rate 75 --output eDP-1 --off
+
+# arch copies it to the first line of the ~/.xinitrc file
+# xrandr --output HDMI1 --mode 2560x1080 --rate 75 --output eDP1 --off
 
 function start_running(){
   STATUS=$(ps -C $1 --no-header | wc -l)
