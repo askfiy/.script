@@ -6,6 +6,14 @@
 # arch copies it to the first line of the ~/.xinitrc file
 # xrandr --output HDMI1 --mode 2560x1080 --rate 75 --output eDP1 --off
 
+
+# disable touchpad for 1s while typing
+syndaemon -R -i 0.5 &
+
+
+# set default speaker to built-in
+pacmd set-default-sink alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__hw_sofhdadsp__sink
+
 function start_running(){
   STATUS=$(ps -C $1 --no-header | wc -l)
   echo $1 $STATUS
