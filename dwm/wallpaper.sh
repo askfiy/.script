@@ -2,7 +2,7 @@
 
 shopt -s nullglob
  
-cd ./background
+cd ./background/1920x1080/
 
 while true; do
 	files=()
